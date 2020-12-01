@@ -18,3 +18,5 @@ $ npm run generate
 ```
 
 For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).
+
+https://nostalgic-hopper-f5bc39.netlify.app/weather-app
