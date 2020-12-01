@@ -57,7 +57,7 @@ export default {
     getWeatherInfo() {
       this.$axios
         .$get(
-          `http://api.openweathermap.org/data/2.5/weather?q=${this.city}&appid=${process.env.weatherAppId}`
+          `http://api.openweathermap.org/data/2.5/weather?q=${this.city}&appid=6970920ec1201b03b6906b18ce5d7dbb`
         )
         // eslint-disable-next-line no-console
         .then((res) => (this.weather = res))
