@@ -1,7 +1,14 @@
+<!--
+     Author:    Build Rise Shine with Nyros (BRS) 
+     Created:   11.05.2022 
+     Library / Component: Weather componenet
+     Description: Page displays a input field to search for the weather details witha a button
+     (c) Copyright by BRS with Nyros. 
+-->
 <template>
   <v-container>
     <v-flex>
-      <v-card color="dark-grey darken-2" dark>
+      <v-card color="dark-grey darken-2">
         <v-card-text>
           <v-layout class="justify-center">
             <v-flex v-if="weather.weather" class="text-xs-center">
@@ -21,14 +28,14 @@
     </v-flex>
     <v-flex xs12 class="mt-4">
       <v-form @submit.prevent="getWeatherInfo">
-        <v-textarea
+        <v-text-field
           v-model="city"
           label="Enter city name"
           outlined
           rows="1"
           row-height="15"
           solo
-        ></v-textarea>
+        ></v-text-field>
         <v-btn @click="getWeatherInfo">Submit</v-btn>
       </v-form>
     </v-flex>
